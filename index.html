@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="estilo/style.css" />
+    <title>inflanet</title>
+  </head>
+  <body>
+    <div class="area_box">
+      <div class="campos">
+        <div class="radios">
+          <input type="radio" id="Plan" name="radio" value="plano" />
+          <label for="Plan">plano</label>
+        </div>
+        <div class="radios">
+          <input type="radio" id="Tel" name="radio" value="telefonia" />
+          <label for="Tel">Telefonia</label>
+        </div>
+        <div class="radios">
+          <input type="radio" id="Vconect" name="radio" value="velocidade" />
+          <label for="Vconect">velocidade</label>
+        </div>
+      </div>
+
+      <div class="div_form" id="plano">
+        <h1>Calcule Valor do plano</h1>
+        <label for="plano">Plano de Internet:</label>
+        <select id="planoP">
+          <option value="basic">Basic</option>
+          <option value="premium">Premium</option>
+          <option value="enterprise">Enterprise</option>
+        </select>
+        <label for="valor">Valor do Plano de Internet:</label>
+        <input type="number" id="valor" step="0.01" />
+        <button onclick="calcularDesconto()">Calcular</button>
+        <div id="resultadoP"></div>
+      </div>
+
+      <div class="div_form" id="velocidade">
+        <h1>Velocidade de Conexão</h1>
+        <div>
+          <label for="clientes">Quantidade de Clientes:</label>
+          <input type="number" id="clientes" />
+          <button onclick="coletarVelocidades()">Coletar Velocidades</button>
+        </div>
+        <div id="velocidades"></div>
+        <div id="resultado"></div>
+      </div>
+
+      <div class="div_form" id="telefonia">
+        <h1>Calculadora de Desconto</h1>
+        <label for="planoT">Plano de Telefonia:</label>
+        <input type="number" id="planoT" />
+        <label for="minutos">Minutos de Ligação:</label>
+        <input type="number" id="minutos" />
+        <button onclick="calcularTelefonia()">Calcular</button>
+        <div id="resultadoT"></div>
+      </div>
+    </div>
+
+    <script src="estilo/script.js"></script>
+  </body>
+</html>

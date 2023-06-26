@@ -1,0 +1,140 @@
+* {
+    font-family: "Open Sans", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+    box-sizing: border-box !important;
+    scroll-behavior: smooth !important;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100%;
+    transition: 0.2s linear;
+}
+
+.area_box {
+    color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    background: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div_form {
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    background: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#resultadoP, #resultado, #resultadoT, #velocidades {
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    padding-bottom: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.campos {
+    background: #1d1d1d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.radios {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: initial;
+}
+
+input[type="radio"] {
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 5px !important;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.div_form label {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+
+select {
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+option {
+    color: #1d1d1d;
+}
+
+input[type="number"] {
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+#telefonia{
+    display: none;
+}
+
+#velocidade{
+    display: none;
+}
